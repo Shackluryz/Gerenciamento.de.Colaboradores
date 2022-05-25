@@ -1,4 +1,4 @@
-package me.dio;
+package me.dio.models;
 
 public abstract class FuncionarioPJ {
     protected String nome;

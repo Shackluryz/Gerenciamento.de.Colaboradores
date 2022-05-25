@@ -1,4 +1,4 @@
-package me.dio;
+package me.dio.models;
 
 public class Vendedor extends FuncionarioCLT implements CalculaBonificacao {
 
