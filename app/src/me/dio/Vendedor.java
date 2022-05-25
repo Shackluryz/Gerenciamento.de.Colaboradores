@@ -1,8 +1,13 @@
 package me.dio;
 
-public class Vendedor extends FuncionarioCLT {
+public class Vendedor extends FuncionarioCLT implements CalculaBonificacao {
 
     private Double valorBonificacao;
+
+    @Override
+    public void calculaBonificacao(Double porcentagemBonificacao) {
+        this.valorBonificacao = this.valorSalario * (porcentagemBonificacao/100d);
+    }
 
     @Override
     public String toString() {

@@ -11,7 +11,7 @@ public class Main {
         vendedor.setDocumento("000.000.000-00");
         vendedor.setValorSalario(1000d);
         vendedor.setEndereco(endereco);
-
+        vendedor.calculaBonificacao(2d);
         System.out.println(vendedor);
         System.out.println("-------");
 
@@ -26,6 +26,7 @@ public class Main {
         gerente.setHorasTrabalhadas(20);
         gerente.setValorHora(100d);
         gerente.calcularRemuneracao();
+        gerente.calculaBonificacao(3d);
         System.out.println(gerente);
     }
 }
